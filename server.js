@@ -1,29 +1,14 @@
-const express = require('express');
-
-const app = express();
-
-// MIDDLEWARE
-app.use(express.json());    
-
-// SERVIDOR WEB
-app.listen(3000, () => console.log("Servidor iniciado..."));
-
-const path = require('path');
-
-app.use(express.static(path.join(__dirname , 'public')));
-
-const cors = require('cors');
-
-app.use(cors()); 
-
-
 require('dotenv').config();
+const path       = require('path');
+const cors       = require('cors');
+const express    = require('express');
+const mongoose   = require('mongoose');
+const apiRoutes  = require('./routes');
 
+const app    = express();
 const PORT   = process.env.PORT || 3000;
 const DB_URI = process.env.DB_URI;
 
-
-const mongoose = require('mongoose');
 
 // CONEXIÓN A BASE DE DATOS
 mongoose.connect(DB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -31,7 +16,11 @@ mongoose.connect(DB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .catch(error => console.log("Error al conectarse a la BD" + error));
 
 
-const apiRoutes = require('./routes');
+// MIDDLEWARE
+app.use(cors());            // Soporte para CORS
+app.use(express.json());    // IMPORTANTE: Poner esto antes de las rutas
+app.use('/api', apiRoutes);
+app.use(express.static(path.join(__dirname , 'public')));
 
-app.use('/api', apiRoutes);    
-
+// SERVIDOR WEB
+app.listen(PORT, () => console.log("Servidor iniciado..."));
