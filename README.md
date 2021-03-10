@@ -1,13 +1,22 @@
 # TRABAJO DEL TEMA 6
 
->Crear en GitHub 2 repositorios, uno para el backend y otro para el frontend de la aplicación desarrollada a lo largo del curso.
->En la siguiente captura muestro los dos repositorios creados de backend y frontend de nuestra aplicación.
+Crear en GitHub 2 repositorios, uno para el backend y otro para el frontend de la aplicación desarrollada a lo largo del curso.
+
+En la siguiente captura muestro los dos repositorios creados de backend y frontend de nuestra aplicación.
+
+
 ![Captura de pantalla (478)](https://user-images.githubusercontent.com/55695233/110682749-960a2400-81db-11eb-8209-3327e20f7a2b.png)
 
->Mostramos una captura de nuestro backend.
+
+Mostramos una captura de nuestro backend.
+
+
 ![Captura de pantalla (479)](https://user-images.githubusercontent.com/55695233/110682818-ab7f4e00-81db-11eb-897e-8a7b87a181d5.png)
 
->Una captura de nuestro frontend.
+
+Una captura de nuestro frontend.
+
+
 >![Captura de pantalla (480)](https://user-images.githubusercontent.com/55695233/110682858-b639e300-81db-11eb-8dab-b47c03efb7d7.png)
 
 
