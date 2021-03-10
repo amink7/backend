@@ -404,17 +404,17 @@ Todo el código fuente del servidor está disponible en el archivo **[`server.js
 Este backend proporpociona una **API Rest** con los siguientes **end-points**:
 
 ```
-(GET)    /api/clientes         (Lista    todos los clientes)
-(POST)   /api/clientes         (Crea     cliente)
-(GET)    /api/clientes/:id     (Lista    cliente :id)
-(PUT)    /api/clientes/:id     (Modifica cliente :id)
-(DELETE) /api/clientes/:id     (Elimina  cliente :id)
+(GET)    /api/soldados         (Lista    todos los soldados)
+(POST)   /api/soldados         (Crea     soldado)
+(GET)    /api/soldados/:id     (Lista    soldado :id)
+(PUT)    /api/soldados/:id     (Modifica soldado :id)
+(DELETE) /api/soldados/:id     (Elimina  soldado :id)
 
-(GET)    /api/articulos        (Lista    todos los artículos)
-(POST)   /api/articulos        (Crea     artículo)
-(GET)    /api/articulos/:id    (Lista    artículo :id)
-(PUT)    /api/articulos/:id    (Modifica artículo :id)
-(DELETE) /api/articulos/:id    (Elimina  artículo :id)
+(GET)    /api/armas        (Lista    todos los artículos)
+(POST)   /api/armas        (Crea     artículo)
+(GET)    /api/armas/:id    (Lista    artículo :id)
+(PUT)    /api/armas/:id    (Modifica artículo :id)
+(DELETE) /api/armas/:id    (Elimina  artículo :id)
 ```
 
 El código fuente usado es:
@@ -428,11 +428,11 @@ const router = express.Router();
 
 // --------------- API REST CRUD
 
-router.get    ("/clientes",      cors(), controller.readClientes);   // Read All
-router.get    ("/clientes/:id",  cors(), controller.readCliente);    // Read
-router.delete ("/clientes/:id",  cors(), controller.deleteCliente);  // Delete
-router.put    ("/clientes/:id",  cors(), controller.updateCliente);  // Update
-router.post   ("/clientes",      cors(), controller.createCliente);  // Create
+router.get    ("/soldados",      cors(), controller.readSoldados);   // Read All
+router.get    ("/soldados/:id",  cors(), controller.readSoldado);    // Read
+router.delete ("/soldados/:id",  cors(), controller.deleteSoldado);  // Delete
+router.put    ("/soldados/:id",  cors(), controller.updateSoldado);  // Update
+router.post   ("/soldados",      cors(), controller.createSoldado);  // Create
 
 // ...
 
@@ -448,10 +448,10 @@ Todo el código fuente de las rutas está disponible en el archivo **[`routes.js
 Los controladores son los encargados de realizar las operaciones CRUD. Para ello hacen uso de los modelos definidos.
 
 ```javascript
-const { Cliente, Articulo } = require("./models.js");
+const { Soldado, Arma } = require("./models.js");
 
-exports.readClientes = (req, res) => 
-    Cliente.find({}, (err, data) => {
+exports.readSoldados = (req, res) => 
+    Soldado.find({}, (err, data) => {
         if (err) res.json({ error: err });
         else     res.json(data);
     });
@@ -465,17 +465,17 @@ Todo el código fuente de los controladores está disponible en el archivo **[`c
 
 Tenemos 2 modelos:
 
-- Cliente 
+- Soldados 
 - Artículo
 
 Cada uno tiene un esquema asociado que, en este caso, es bastante simple. Cada modelo tiene únicamente 2 propiedades:
 
 ```javascript
-const Cliente = mongoose.model('Cliente',
+const Soldados = mongoose.model('Soldados',
   new mongoose.Schema({ nombre: String, apellidos: String })
 );
 
-const Articulo = mongoose.model('Articulo',
+const Arma = mongoose.model('Arma',
   new mongoose.Schema({ nombre: String, precio: Number })
 );
 ```
