@@ -1,60 +1,14 @@
-Trabajo del Tema 
+#
 
-Crear en GitHub 2 repositorios, uno para el backend y otro para el frontend de la aplicación desarrollada a lo largo del curso.
 
-En la siguiente captura muestro los dos repositorios creados de backend y frontend de nuestra aplicación.![](Aspose.Words.54c697c8-053a-4300-a918-e3658a3c1bdc.001.jpeg)
 
-Mostramos una captura de nuestro backend. Una captura de nuestro frontend.![](Aspose.Words.54c697c8-053a-4300-a918-e3658a3c1bdc.002.jpeg)![](Aspose.Words.54c697c8-053a-4300-a918-e3658a3c1bdc.003.jpeg)
 
-Configurar una clave SSH para acceso desde casa. Si se considera necesario puede configurarse otra clave para el acceso desde el centro educativo.![](Aspose.Words.54c697c8-053a-4300-a918-e3658a3c1bdc.004.jpeg)
 
-Generamos la clave con **ssh-keygen![](Aspose.Words.54c697c8-053a-4300-a918-e3658a3c1bdc.005.jpeg)**
 
-Copiamos la clave pública a un bloc de notas en el escritorio
 
-Añadimos la clave SSH pública en github![](Aspose.Words.54c697c8-053a-4300-a918-e3658a3c1bdc.006.jpeg)
+![image](https://user-images.githubusercontent.com/55695233/110680624-22ffae00-81d9-11eb-96af-949624b2bc1e.png)
 
-El uso de los comandos más frecuentes de git:
 
-git clone:  Clonando un repositorio existente
-
-Si deseas obtener una copia de un repositorio Git existente — por ejemplo, un proyecto en el que te gustaría contribuir — el comando que necesitas es git clone. Cada versión de cada archivo de la historia del proyecto es descargada por defecto cuando ejecutas git clone.
-
-Clonamos el repositorio de backend a nuestra carpeta backend.![](Aspose.Words.54c697c8-053a-4300-a918-e3658a3c1bdc.007.jpeg)
-
-Realizamos un ls dentro de la carpeta backend creada para comprobar que se ha clonado con éxito.![](Aspose.Words.54c697c8-053a-4300-a918-e3658a3c1bdc.008.jpeg)
-
-git add:
-
-Añadir archivos al área de ensayo, git add
-
-Esto permite construir series de instantáneas de los archivos creados o modificados en el proyecto antes de guardarlos en el historial del proyecto. Cuando finalmente se quiere guardar y agrupar estos cambios, se guardan en el historial mediante commits.
-
-git commit:
-
-El comando git commit captura una instantánea de los cambios preparados en ese momento del proyecto. Las instantáneas confirmadas pueden considerarse como versiones "seguras" de un proyecto: Git no las cambiará nunca a no ser que se lo pidas expresamente.
-
-Creamos un archivo de markdown READMEPLEASE.md Realizamos un git add ![](Aspose.Words.54c697c8-053a-4300-a918-e3658a3c1bdc.009.jpeg)y seguidamente un commit.
-
-git log:![](Aspose.Words.54c697c8-053a-4300-a918-e3658a3c1bdc.010.jpeg)
-
-El comando git log es una herramienta básica de Git para explorar el historial del repositorio. Este comando se usa cuando necesitas buscar una versión concreta de un proyecto o saber los cambios que se introducirán mediante la fusión en una rama de función.
-
-git status:
-
-El comando git status muestra el estado del directorio de trabajo y del área del entorno de ensayo. Permite ver los cambios que se han preparado, los que no y los archivos en los que Git no va a realizar el seguimiento.![](Aspose.Words.54c697c8-053a-4300-a918-e3658a3c1bdc.011.jpeg)
-
-git remote
-
-El comando git remote es una parte de un sistema más amplio que se encarga de sincronizar los cambios. Los registros inscritos mediante el comando git remote se utilizan junto con los comandos git fetch, git push ![](Aspose.Words.54c697c8-053a-4300-a918-e3658a3c1bdc.012.jpeg)y git pull.
-
-Vamos a mostrar también con git remote -v. El uso de comandos más avanzados de git: git diff:
-
-Es un comando multiusos de Git que, cuando se ejecuta, lleva a cabo una función para establecer las diferencias en los orígenes de datos de Git. Dichos orígenes de datos pueden ser confirmaciones, ramas ![](Aspose.Words.54c697c8-053a-4300-a918-e3658a3c1bdc.013.jpeg)y archivos, entre otras posibilidades.
-
-git reset:
-
-Como resumen, git reset es un comando potente que se utiliza para deshacer los cambios locales en el estado de un repositorio de Git. Git reset actúa en "los tres árboles de Git". Estos árboles son el historial de confirmaciones ( HEAD ), el índice del entorno de ensayo y el directorio de trabajo.![](Aspose.Words.54c697c8-053a-4300-a918-e3658a3c1bdc.014.jpeg)
 
 
 
