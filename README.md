@@ -33,7 +33,71 @@ Copiamos la clave pública a un bloc de notas en el escritorio
 
 ![Captura de pantalla (483)](https://user-images.githubusercontent.com/55695233/110683211-12046c00-81dc-11eb-87dd-0ca22a181221.png)
 
+Añadimos la clave SSH pública en github
+![Captura de pantalla (484)](https://user-images.githubusercontent.com/55695233/110683312-23e60f00-81dc-11eb-830b-c8983584eb8d.png)
 
+
+El uso de los comandos más frecuentes de git:
+
+git clone:  Clonando un repositorio existente
+Si deseas obtener una copia de un repositorio Git existente — por ejemplo, un proyecto en el que te gustaría contribuir — el comando que necesitas es git clone. Cada versión de cada archivo de la historia del proyecto es descargada por defecto cuando ejecutas git clone.
+
+Clonamos el repositorio de backend a nuestra carpeta backend.
+
+![Captura de pantalla (485)](https://user-images.githubusercontent.com/55695233/110683344-2ea0a400-81dc-11eb-8ca7-f0e24caf93cb.png)
+
+
+Realizamos un ls dentro de la carpeta backend creada para comprobar que se ha clonado con éxito.
+
+![Captura de pantalla (486)](https://user-images.githubusercontent.com/55695233/110683374-38c2a280-81dc-11eb-9598-60f63abf8796.png)
+
+git add:
+
+Añadir archivos al área de ensayo, git add
+Esto permite construir series de instantáneas de los archivos creados o modificados en el proyecto antes de guardarlos en el historial del proyecto. Cuando finalmente se quiere guardar y agrupar estos cambios, se guardan en el historial mediante commits.
+
+git commit:
+
+El comando git commit captura una instantánea de los cambios preparados en ese momento del proyecto. Las instantáneas confirmadas pueden considerarse como versiones "seguras" de un proyecto: Git no las cambiará nunca a no ser que se lo pidas expresamente.
+
+
+Creamos un archivo de markdown READMEPLEASE.md
+Realizamos un git add y seguidamente un commit.
+
+![Captura de pantalla (487)](https://user-images.githubusercontent.com/55695233/110683403-4546fb00-81dc-11eb-840d-75e79f9db956.png)
+
+git log:
+
+El comando git log es una herramienta básica de Git para explorar el historial del repositorio. Este comando se usa cuando necesitas buscar una versión concreta de un proyecto o saber los cambios que se introducirán mediante la fusión en una rama de función.
+
+![Captura de pantalla (488)](https://user-images.githubusercontent.com/55695233/110683429-4ed06300-81dc-11eb-993e-3adb47dc6a6a.png)
+
+git status:
+
+El comando git status muestra el estado del directorio de trabajo y del área del entorno de ensayo. Permite ver los cambios que se han preparado, los que no y los archivos en los que Git no va a realizar el seguimiento.
+
+![Captura de pantalla (489)](https://user-images.githubusercontent.com/55695233/110683457-56900780-81dc-11eb-8b05-c275d0118ea0.png)
+
+git remote
+
+El comando git remote es una parte de un sistema más amplio que se encarga de sincronizar los cambios. Los registros inscritos mediante el comando git remote se utilizan junto con los comandos git fetch, git push y git pull.
+Vamos a mostrar también con git remote -v.
+
+![Captura de pantalla (490)](https://user-images.githubusercontent.com/55695233/110683502-63146000-81dc-11eb-80a7-9382e922a4c7.png)
+
+
+El uso de comandos más avanzados de git:
+
+git diff:
+
+Es un comando multiusos de Git que, cuando se ejecuta, lleva a cabo una función para establecer las diferencias en los orígenes de datos de Git. Dichos orígenes de datos pueden ser confirmaciones, ramas y archivos, entre otras posibilidades.
+![Captura de pantalla (491)](https://user-images.githubusercontent.com/55695233/110683550-6f002200-81dc-11eb-9d3d-4c8ce8dc49b6.png)
+
+git reset:
+
+Como resumen, git reset es un comando potente que se utiliza para deshacer los cambios locales en el estado de un repositorio de Git. Git reset actúa en "los tres árboles de Git". Estos árboles son el historial de confirmaciones ( HEAD ), el índice del entorno de ensayo y el directorio de trabajo.
+
+![Captura de pantalla (492)](https://user-images.githubusercontent.com/55695233/110683573-758e9980-81dc-11eb-8ae9-cfb3027250fe.png)
 
 
 
