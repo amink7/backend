@@ -11,13 +11,43 @@ En la siguiente captura muestro los dos repositorios creados de backend y fronte
 Mostramos una captura de nuestro backend.
 
 
-![Captura de pantalla (479)](https://user-images.githubusercontent.com/55695233/110682818-ab7f4e00-81db-11eb-897e-8a7b87a181d5.png)
+![Captura de pantalla (480)](https://user-images.githubusercontent.com/55695233/110682858-b639e300-81db-11eb-8dab-b47c03efb7d7.png)
 
 
 Una captura de nuestro frontend.
 
 
->![Captura de pantalla (480)](https://user-images.githubusercontent.com/55695233/110682858-b639e300-81db-11eb-8dab-b47c03efb7d7.png)
+![Captura de pantalla (481)](https://user-images.githubusercontent.com/55695233/110683049-ea150880-81db-11eb-8c6c-3d7a7a095d55.png)
+
+
+Configurar una clave SSH para acceso desde casa. 
+Si se considera necesario puede configurarse otra clave para el acceso desde el centro educativo.
+
+Generamos la clave con ssh-keygen
+
+![Captura de pantalla (482)](https://user-images.githubusercontent.com/55695233/110683145-031db980-81dc-11eb-9214-3be67d784a83.png)
+
+
+Copiamos la clave pública a un bloc de notas en el escritorio
+
+
+![Captura de pantalla (483)](https://user-images.githubusercontent.com/55695233/110683211-12046c00-81dc-11eb-87dd-0ca22a181221.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
